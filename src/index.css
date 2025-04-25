@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courgette', cursive;
+  background: url('https://www.burkedecor.com/cdn/shop/products/MF80503_375a69a1-d9e4-4415-89b0-daef16a0849e.jpg?v=1657561696') no-repeat center center fixed;
+  background-size: cover;
+  color: #3c2a2a;
+  text-align: center;
+  padding: 20px;
+}
+.retro-title {
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  color: #b23a48 ;
+  text-shadow:
+    0 0 5px #b23a48,
+    0 0 10px #b23a48,
+    0 0 20px #b8646d,
+    0 0 30px #b8646d;
+  animation: pulse 1.5s infinite alternate;
+  margin: 20px 0;
+}
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+iframe {
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.instagram-box {
+  background: rgba(255, 240, 245, 0.9);
+  max-width: 350px;
+  margin: 20px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+.instagram-box img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #b23a48;
+}
+.instagram-box h2 {
+  margin: 10px 0 5px;
+}
+.instagram-box p {
+  color: #555;
+  font-size: 14px;
+}
+.instagram-box a {
+  color: #b23a48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.instagram-box a:hover{
+  color: black;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow:
+      0 0 5px #ff4da6,
+      0 0 10px #ff4da6,
+      0 0 20px #ff99cc,
+      0 0 30px #ff99cc;
+  }
+  100% {
+    text-shadow:
+      0 0 2px #ff4da6,
+      0 0 6px #ff4da6,
+      0 0 12px #ff99cc,
+      0 0 20px #ff99cc;
+  }
+}
