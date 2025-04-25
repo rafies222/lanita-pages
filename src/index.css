@@ -54,6 +54,14 @@ iframe {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   padding: 15px;
 }
+
+.siteOficial {
+  text-decoration: none;
+  font-size: 1.3em;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
 .instagram-box img {
   width: 100px;
   border-radius: 50%;
@@ -66,7 +74,7 @@ iframe {
   color: #555;
   font-size: 14px;
 }
-.instagram-box a {
+.instagram-box a, .siteOficial {
   color: #b23a48;
   text-decoration: none;
   font-weight: bold;
@@ -75,6 +83,18 @@ iframe {
 .instagram-box a:hover{
   color: black;
 }
+
+
+.borboleta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  z-index: 9999;
+  animation: voar 15s infinite linear;
+  pointer-events: none;
+}
+
 
 @keyframes pulse {
   0% {
@@ -92,3 +112,13 @@ iframe {
       0 0 20px #ff99cc;
   }
 }
+
+@keyframes voar {
+  0%   { transform: translate(0vw, 0vh) rotate(0deg); }
+  20%  { transform: translate(50vw, 10vh) rotate(15deg); }
+  40%  { transform: translate(80vw, 30vh) rotate(-10deg); }
+  60%  { transform: translate(60vw, 70vh) rotate(20deg); }
+  80%  { transform: translate(20vw, 90vh) rotate(-15deg); }
+  100% { transform: translate(0vw, 0vh) rotate(0deg); }
+}
+
